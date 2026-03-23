@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Data Viz Site</title>
+    <meta charset="UTF-8">
+    <title>San Francisco Crime Data Story</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .viz {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>This site contains data visualizations about crime in San Francisco.</p>
-    <a href="visualizations/crime_hourly_interactive.html">Explore hourly crime patterns →</a>
-    <img src="images/Assault_crimes_by_hour.png" alt="Assault crimes by hour in SF" style="max-width: 100%;">
-    <iframe src="visualizations/heatmap_prostitution.html" width="100%" height="600" frameborder="0"></iframe>
+
+    <!-- INTRO -->
+    <section>
+        <h1>Crime in San Francisco</h1>
+        <p>
+            This data story explores patterns in crime across San Francisco.
+            Using temporal and spatial visualizations, we uncover when and where
+            crime is most concentrated.
+        </p>
+        <p>
+            Scroll down to explore different perspectives on the data.
+        </p>
+    </section>
+
+
+    <!-- VISUALIZATION 1 -->
+    <section>
+        <h2>When does crime happen?</h2>
+        <p>
+            This visualization shows how crime varies across the hours of the day.
+            We can observe clear daily patterns, with certain crime types peaking
+            at specific times.
+        </p>
+
+        <div class="viz">
+            <!-- OPTION 1: Interactive -->
+            <iframe src="visualizations/crime_hourly_interactive.html"></iframe>
+
+            <!-- OPTION 2: Static image (if needed) -->
+            <!-- <img src="images/Assault_crimes_by_hour.png" alt="Crime by hour"> -->
+        </div>
+    </section>
+
+
+    <!-- VISUALIZATION 2 -->
+    <section>
+        <h2>Where does crime concentrate?</h2>
+        <p>
+            Crime is not evenly distributed across the city. This heatmap highlights
+            areas with high crime density, revealing strong spatial clustering.
+        </p>
+
+        <div class="viz">
+            <iframe src="visualizations/heatmap_prostitution.html"></iframe>
+        </div>
+    </section>
+
+
+    <!-- VISUALIZATION 3 -->
+    <section>
+        <h2>How does crime evolve over time?</h2>
+        <p>
+            Looking at trends over time allows us to see whether crime is increasing,
+            decreasing, or shifting in nature.
+        </p>
+
+        <div class="viz">
+            <!-- Replace with your third visualization -->
+            <iframe src="visualizations/your_third_plot.html"></iframe>
+        </div>
+    </section>
+
+
+    <!-- CONCLUSION -->
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            Crime in San Francisco shows clear temporal and spatial patterns.
+            Understanding these patterns can help inform policy decisions and
+            improve public safety strategies.
+        </p>
+    </section>
 
 </body>
 </html>
